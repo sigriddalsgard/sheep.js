@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sheep.js</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="{{ get_url(path="/") }}" class="{% if current_path == "/" %}active{% endif %}">Home</a>
+        </li>
+        <li>
+          <a href="{{ get_url(path="/about/") }}" class="{% if current_path == "/about/" %}active{% endif %}">About</a>
+        </li>
+        <li>
+          <a href="{{ get_url(path="/contact/") }}" class="{% if current_path == "/contact/" %}active{% endif %}">Contact</a>
+        </li>
+        <li>
+          <a href="{{ get_url(path="/join/") }}" class="{% if current_path == "/join/" %}active{% endif %}">Join</a>
+        </li>
+        <li>
+          <a href="{{ get_url(path="/logistics/") }}" class="{% if current_path == "/logistics/" %}active{% endif %}">Logistics</a>
+        </li>
+        <li>
+          <a href="{{ get_url(path="/encyclopedia/") }}" class="{% if current_path == "/encyclopedia/" %}active{% endif %}">Encyclopedia</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="container">{% block content %}{% endblock %}</main>
+
+    <footer>
+      <div class="container">
+        <p>Copyright © Sigrið Dalsgarð</p>
+      </div>
+    </footer>
+  </body>
+</html>

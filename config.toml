@@ -1,0 +1,3 @@
+base_url = "https://sigriddalsgard.github.io/sheep.js"
+minify_html = true
+compile_sass = true
