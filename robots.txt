@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://sigriddalsgard.github.io/sheep.js/sitemap.xml
